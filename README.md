@@ -2,7 +2,7 @@
 
 A modern video conferencing and collaboration platform built for Gen Z, featuring AI-powered meeting assistance, ephemeral brainstorming rooms, shared cloud workspaces, and deep Google Workspace integration.
 
-https://yoodle.vercel.app/
+**Built at HackCU by [Uditanshu Tomar](https://github.com/uditanshutomar) and [Sukriti Sehgal](https://github.com/sukritisehgal-28).**
 
 ## Features
 
@@ -54,8 +54,8 @@ Full read/write access to Gmail, Google Calendar, Drive, Docs, Sheets, Tasks, an
 ### Installation
 
 ```bash
-git clone https://github.com/uditanshutomar/Yoodle.git
-cd Yoodle
+git clone https://github.com/sukritisehgal-28/Yoodle-HackCU.git
+cd Yoodle-HackCU
 npm install
 ```
 
