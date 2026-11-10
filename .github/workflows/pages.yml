@@ -40,6 +40,7 @@ jobs:
           NODE_OPTIONS="--max-old-space-size=4096" npx next build
         env:
           NEXT_PUBLIC_APP_URL: https://sukritisehgal-28.github.io/Yoodle-HackCU
+          NEXT_PUBLIC_BASE_PATH: /Yoodle-HackCU
 
       - uses: actions/upload-pages-artifact@v3
         with:
