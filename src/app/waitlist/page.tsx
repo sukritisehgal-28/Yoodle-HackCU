@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { YoodleMascotSmall } from "@/components/YoodleMascot";
 import { DoodleStar, DoodleLightning, DoodleSparkles } from "@/components/Doodles";
+import { withBasePath } from "@/lib/utils/base-path";
 
 export default function WaitlistPage() {
   const [email, setEmail] = useState("");
@@ -77,7 +78,7 @@ export default function WaitlistPage() {
       {/* Background doodle pattern */}
       <div className="pointer-events-none absolute inset-0">
         <Image
-          src="/yoodle-banner.png"
+          src={withBasePath("/yoodle-banner.png")}
           alt=""
           fill
           className="object-cover opacity-[0.08]"

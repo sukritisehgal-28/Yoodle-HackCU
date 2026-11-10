@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
+const basePath = "/Yoodle-HackCU";
+
 const nextConfig: NextConfig = {
   output: "export",
+  basePath,
   images: {
     unoptimized: true,
   },
-  basePath: "/Yoodle-HackCU",
-  assetPrefix: "/Yoodle-HackCU",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

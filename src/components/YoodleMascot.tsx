@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { withBasePath } from "@/lib/utils/base-path";
 
 export function YoodleMascotSmall({ className = "" }: { className?: string }) {
   return (
     <Image
-      src="/yoodle-logo.png"
+      src={withBasePath("/yoodle-logo.png")}
       alt="Yoodle mascot"
       width={40}
       height={40}
@@ -25,7 +26,7 @@ export function YoodleMascotLarge({ className = "" }: { className?: string }) {
       transition={{ duration: 0.7, type: "spring" }}
     >
       <Image
-        src="/yoodle-logo.png"
+        src={withBasePath("/yoodle-logo.png")}
         alt="Yoodle mascot"
         width={300}
         height={300}

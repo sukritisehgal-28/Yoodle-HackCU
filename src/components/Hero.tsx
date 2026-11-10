@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { DoodleUnderline } from "./Doodles";
+import { withBasePath } from "@/lib/utils/base-path";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Full doodle background */}
       <div className="pointer-events-none absolute inset-0">
         <Image
-          src="/yoodle-banner.png"
+          src={withBasePath("/yoodle-banner.png")}
           alt=""
           fill
           className="object-cover opacity-[0.18]"
